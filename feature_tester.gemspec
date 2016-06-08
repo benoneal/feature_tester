@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Simple deterministic AB Tester.}
   spec.description   = %q{Uses your user's unique identifier to reliably assign them to your test conditions.}
-  spec.homepage      = "github.com/benoneal/feature_tester"
+  spec.homepage      = "https://github.com/benoneal/feature_tester"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
