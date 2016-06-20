@@ -4,6 +4,7 @@ class FeatureTester
   attr_reader :id, :experiments
 
   def initialize(id, experiments = [])
+    raise "You must provide an ID" if id.empty?
     @id = id.dup.freeze
     @experiments = experiments.dup.freeze
   end

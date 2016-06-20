@@ -44,4 +44,8 @@ describe FeatureTester do
     expect(result1).to eq expected_enrolments_for_user1[:test2]
     expect(result2).to eq expected_enrolments_for_user2[:test2]
   end
+
+  it "raises on empty id" do
+    expect { FeatureTester.new("", tests) }.to raise_error("You must provide an ID")
+  end
 end
