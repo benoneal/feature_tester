@@ -24,7 +24,7 @@ class FeatureTester
   end
 
   def binary_from_seed(seed)
-    Digest::SHA256.digest(seed).unpack("C*").map { |n| n.to_s(2) }.join
+    Digest::SHA256.digest(seed).unpack("B*").join
   end
 
 end
